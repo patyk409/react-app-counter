@@ -62,7 +62,7 @@ class Counter extends Component {
             <div className="counter">
                 Counter:<span className="value">{this.state.counterValue}</span>
                 <Buttons buttonMethod={this.changeValue} stepValue={this.state.stepValue} />
-                <Step updateStep={this.updateStep} />
+                <Step updateStep={this.updateStep} stepValue={this.state.stepValue} />
                 {clockElement}
             </div>
         );

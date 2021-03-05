@@ -1,7 +1,7 @@
 import React from "react";
 import './Buttons.css';
 
-function Buttons(props) {
+const Buttons = props => {
     return (
         <div className="btns-panel">
             <button className="btn" onClick={() => { props.buttonMethod('add') }}>Add {props.stepValue}</button>
